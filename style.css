@@ -8,6 +8,11 @@ body {
     outline: none;
 }
 
+.h--timeline-event-title {
+    font-size: 3.5rem; /* Adjust the font size as needed */
+}
+
+
 .h--timeline-container,
 .h--timeline-events {
     position: relative;
