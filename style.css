@@ -68,12 +68,12 @@ body {
 
 .h--timeline-dates::before {
     left: 0;
-    background: linear-gradient(to right, #333333, rgba(51, 51, 51, 0));
+    background: linear-gradient(to right, #1e1e1e, rgba(51, 51, 51, 0));
 }
 
 .h--timeline-dates::after {
     right: 0;
-    background: linear-gradient(to left, #333333, rgba(51, 51, 51, 0));
+    background: linear-gradient(to left, #1e1e1e, rgba(51, 51, 51, 0));
 }
 
 .h--timeline-line {
