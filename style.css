@@ -16,6 +16,11 @@ body {
     margin: 0 auto;
 }
 
+.h--timeline-event-content img {
+    max-width: 100%;
+    height: auto;
+}
+
 .h--timeline-navigation-container ul,
 .h--timeline-navigation-container li,
 .h--timeline-events ol,
