@@ -240,6 +240,7 @@ body {
     padding: .5rem;
     border: 1px solid #ffd700; /* Gold color for event content border */
     border-radius: 5px;
+     overflow: hidden; /* Add this to ensure content does not overflow */
 }
 
 .h--timeline-event--selected {
