@@ -336,3 +336,24 @@ body {
 .h--timeline-line li:nth-child(odd) .h--timeline-date--selected::before {
     bottom: -3px;
 }
+.submit-event-link {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #292929; /* Dark text color */
+    background-color: #ffd700; /* Baldwin IV gold color */
+    border: 2px solid #ffd700; /* Baldwin IV gold border */
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.submit-event-link:hover {
+    background-color: #292929; /* Dark background on hover */
+    color: #ffd700; /* Gold text color on hover */
+    border: 2px solid #ffd700; /* Baldwin IV gold border */
+}
+
