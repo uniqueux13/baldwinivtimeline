@@ -197,7 +197,7 @@ body {
 }
 
 .h--timeline-navigation:hover {
-    border-color: #292929; /* Dark background color */
+    border-color: #fff; /* Dark background color */
 }
 
 .h--timeline-navigation--prev {
