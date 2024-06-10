@@ -1,5 +1,4 @@
 /* Util.js */
-/* Util.js */
 /* -------------------- */
 // Utility function
 function Util() {}
@@ -296,17 +295,6 @@ Math.easeInOutQuad = function (t, b, c, d) {
 					event.preventDefault();
 					selectNewDate(self, event.target);
 				});
-				
-				// At line 299
-		const element = document.querySelector('.some-class');
-			if (element) {
-    				element.addEventListener('click', () => {
-       		 // event handler code
-    				});
-			} else {
-    				console.log('Element is undefined', element);
-				}
-
 
 				self.content[i].addEventListener("animationend", function (event) {
 					if (i == self.newDateIndex && self.newDateIndex != self.oldDateIndex)
