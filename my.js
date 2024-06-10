@@ -21,13 +21,14 @@ Util.addClass = function (el, className) {
 };
 
 Util.removeClass = function (el, className) {
-	var classList = className.split(" ");
-	if (el.classList) el.classList.remove(classList[0]);
-	else if (Util.hasClass(el, classList[0])) {
-		var reg = new RegExp("(\\s|^)" + classList[0] + "(\\s|$)");
-		el.className = el.className.replace(reg, " ");
-	}
-	if (classList.length > 1) Util.removeClass(el, classList.slice(1).join(" "));
+    var classList = className.split(" ");
+    if (el && el.classList) {
+        el.classList.remove(classList[0]);
+    } else if (el && Util.hasClass(el, classList[0])) {
+        var reg = new RegExp("(\\s|^)" + classList[0] + "(\\s|$)");
+        el.className = el.className.replace(reg, " ");
+    }
+    if (classList.length > 1) Util.removeClass(el, classList.slice(1).join(" "));
 };
 
 Util.toggleClass = function (el, className, bool) {
@@ -295,6 +296,17 @@ Math.easeInOutQuad = function (t, b, c, d) {
 					event.preventDefault();
 					selectNewDate(self, event.target);
 				});
+				
+				// At line 299
+		const element = document.querySelector('.some-class');
+			if (element) {
+    				element.addEventListener('click', () => {
+       		 // event handler code
+    				});
+			} else {
+    				console.log('Element is undefined', element);
+				}
+
 
 				self.content[i].addEventListener("animationend", function (event) {
 					if (i == self.newDateIndex && self.newDateIndex != self.oldDateIndex)
@@ -354,22 +366,21 @@ Math.easeInOutQuad = function (t, b, c, d) {
 	}
 
 	function selectNewDate(timeline, target) {
-		// ned date has been selected -> update timeline
-		timeline.newDateIndex = Util.getIndexInArray(timeline.date, target);
-		timeline.oldDateIndex = Util.getIndexInArray(
-			timeline.date,
-			timeline.selectedDate
-		);
-		Util.removeClass(timeline.selectedDate, "h--timeline-date--selected");
-		Util.addClass(
-			timeline.date[timeline.newDateIndex],
-			"h--timeline-date--selected"
-		);
-		timeline.selectedDate = timeline.date[timeline.newDateIndex];
-		updateOlderEvents(timeline);
-		updateVisibleContent(timeline);
-		updateFilling(timeline);
-	}
+    timeline.newDateIndex = Util.getIndexInArray(timeline.date, target);
+    timeline.oldDateIndex = Util.getIndexInArray(timeline.date, timeline.selectedDate);
+
+    if (timeline.selectedDate) {
+        Util.removeClass(timeline.selectedDate, 'h--timeline-date--selected');
+    }
+
+    Util.addClass(timeline.date[timeline.newDateIndex], 'h--timeline-date--selected');
+    timeline.selectedDate = timeline.date[timeline.newDateIndex];
+
+    updateOlderEvents(timeline);
+    updateVisibleContent(timeline);
+    updateFilling(timeline);
+}
+
 
 	function updateOlderEvents(timeline) {
 		// update older events style
@@ -381,43 +392,47 @@ Math.easeInOutQuad = function (t, b, c, d) {
 	}
 
 	function updateVisibleContent(timeline) {
-		// show content of new selected date
-		if (timeline.newDateIndex > timeline.oldDateIndex) {
-			var classEntering =
-					"h--timeline-event--selected h--timeline-event--enter-right",
-				classLeaving = "h--timeline-event--leave-left";
-		} else if (timeline.newDateIndex < timeline.oldDateIndex) {
-			var classEntering =
-					"h--timeline-event--selected h--timeline-event--enter-left",
-				classLeaving = "h--timeline-event--leave-right";
-		} else {
-			var classEntering = "h--timeline-event--selected",
-				classLeaving = "";
-		}
+    var classEntering, classLeaving;
+    if (timeline.newDateIndex > timeline.oldDateIndex) {
+        classEntering = 'h--timeline-event--selected h--timeline-event--enter-right';
+        classLeaving = 'h--timeline-event--leave-left';
+    } else if (timeline.newDateIndex < timeline.oldDateIndex) {
+        classEntering = 'h--timeline-event--selected h--timeline-event--enter-left';
+        classLeaving = 'h--timeline-event--leave-right';
+    } else {
+        classEntering = 'h--timeline-event--selected';
+        classLeaving = '';
+    }
 
-		Util.addClass(timeline.content[timeline.newDateIndex], classEntering);
-		if (timeline.newDateIndex != timeline.oldDateIndex) {
-			Util.removeClass(
-				timeline.content[timeline.oldDateIndex],
-				"h--timeline-event--selected"
-			);
-			Util.addClass(timeline.content[timeline.oldDateIndex], classLeaving);
-			//timeline.contentWrapper.style.height = timeline.content[timeline.newDateIndex].offsetHeight + 'px';
-		}
-	}
+    if (timeline.content[timeline.newDateIndex]) {
+        Util.addClass(timeline.content[timeline.newDateIndex], classEntering);
+    } else {
+        console.log('Content at new date index is undefined', timeline.newDateIndex);
+    }
+
+    if (timeline.newDateIndex != timeline.oldDateIndex && timeline.content[timeline.oldDateIndex]) {
+        Util.removeClass(timeline.content[timeline.oldDateIndex], 'h--timeline-event--selected');
+        Util.addClass(timeline.content[timeline.oldDateIndex], classLeaving);
+    } else {
+        console.log('Content at old date index is undefined or new date index is the same as old date index', timeline.oldDateIndex, timeline.newDateIndex);
+    }
+}
+
 
 	function resetAnimation(timeline) {
-		// reset content classes when entering animation is over
-		//timeline.contentWrapper.style.height = null;
-		Util.removeClass(
-			timeline.content[timeline.newDateIndex],
-			"h--timeline-event--enter-right h--timeline-event--enter-left"
-		);
-		Util.removeClass(
-			timeline.content[timeline.oldDateIndex],
-			"h--timeline-event--leave-right h--timeline-event--leave-left"
-		);
-	}
+    if (timeline.content[timeline.newDateIndex]) {
+        Util.removeClass(timeline.content[timeline.newDateIndex], 'h--timeline-event--enter-right h--timeline-event--enter-left');
+    } else {
+        console.log('Content at new date index is undefined in resetAnimation', timeline.newDateIndex);
+    }
+
+    if (timeline.content[timeline.oldDateIndex]) {
+        Util.removeClass(timeline.content[timeline.oldDateIndex], 'h--timeline-event--leave-right h--timeline-event--leave-left');
+    } else {
+        console.log('Content at old date index is undefined in resetAnimation', timeline.oldDateIndex);
+    }
+}
+
 
 	function keyNavigateTimeline(timeline, direction) {
 		// navigate the timeline using the keyboard
