@@ -263,21 +263,55 @@ Math.easeInOutQuad = function (t, b, c, d) {
 	}
 
 	function initEvents(timeline) {
-		var self = timeline;
-		// deaktivate the buttons
-		deaktivateNavigationButtons(self);
+    var self = timeline;
+    // deaktivate the buttons
+    deaktivateNavigationButtons(self);
 
-		// click on arrow navigation
-		self.navigation[0].addEventListener("click", function (event) {
-			event.preventDefault();
-			translateTimeline(self, "prev");
-			deaktivateNavigationButtons(self);
-		});
-		self.navigation[1].addEventListener("click", function (event) {
-			event.preventDefault();
-			translateTimeline(self, "next");
-			deaktivateNavigationButtons(self);
-		});
+    // click on arrow navigation
+    if (self.navigation[0]) {
+        self.navigation[0].addEventListener("click", function (event) {
+            event.preventDefault();
+            translateTimeline(self, "prev");
+            deaktivateNavigationButtons(self);
+        });
+    } else {
+        console.log('Previous navigation element is undefined', self.navigation[0]);
+    }
+
+    if (self.navigation[1]) {
+        self.navigation[1].addEventListener("click", function (event) {
+            event.preventDefault();
+            translateTimeline(self, "next");
+            deaktivateNavigationButtons(self);
+        });
+    } else {
+        console.log('Next navigation element is undefined', self.navigation[1]);
+    }
+
+    // select a new event
+    for (var i = 0; i < self.date.length; i++) {
+        (function (i) {
+            if (self.date[i]) {
+                self.date[i].addEventListener("click", function (event) {
+                    event.preventDefault();
+                    selectNewDate(self, event.target);
+                });
+            } else {
+                console.log('Date element is undefined', self.date[i]);
+            }
+
+            if (self.content[i]) {
+                self.content[i].addEventListener("animationend", function (event) {
+                    if (i == self.newDateIndex && self.newDateIndex != self.oldDateIndex)
+                        resetAnimation(self);
+                });
+            } else {
+                console.log('Content element is undefined', self.content[i]);
+            }
+        })(i);
+    }
+}
+
 		/*
 		//swipe on timeline
 		new SwipeContent(self.datesContainer);
