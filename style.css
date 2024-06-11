@@ -306,7 +306,7 @@ body {
 
 .h--timeline-date::after,
 .h--timeline-date::before {
-    background-color: #ffd700; /* Gold color for circle */
+    background-color: #444444; /* Gold color for circle */
 }
 
 .h--timeline-date--selected::after {
