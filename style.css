@@ -3,6 +3,14 @@ body {
     color: #fff; /* Light text color */
 }
 
+.person-color { 
+    color: lightblue; 
+}
+
+.date-color { 
+    color: white; 
+}
+
 .h--timeline-container *,
 .h--timeline-events * {
     outline: none;
