@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./files/css/styles.css">
+    <link rel="stylesheet" href="/files/css/navigation.css">
+    <script type="text/javascript" src="/files/js/navigation.js"></script>
+    <script type="module" src="/files/js/main.js"></script>
+</head>
+
+<body>
+    <!-- Navigation Section -->
+<nav id="navigation" class="navigation navigation-justified">
+    <div class="navigation-header">
+        <div class="navigation-logo">
+            <a href="#">
+                <img src="/img/Logo Mark.png" alt="logo">
+            </a>
+        </div>
+        <div class="navigation-button-toggler">
+            <i class="hamburger-icon"></i>
+        </div>
+    </div>
+    <div class="navigation-body">
+        <div class="navigation-body-header">
+            <div class="navigation-logo">
+                <a href="#">
+                    <img src="/img/Logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="brand">Unique UX</div>
+            <span class="navigation-body-close-button">&#10005;</span>
+        </div>
+        <ul class="navigation-menu">
+            <li class="navigation-item is-active">
+                <a class="navigation-link" href="/index.html">Home</a>
+            </li>
+            <li class="navigation-item">
+                <a class="navigation-link" href="/timeline.html">Timeline</a>
+                <ul class="navigation-dropdown">
+                    <li class="navigation-dropdown-item">
+                        <a class="navigation-dropdown-link" href="/timeline/baldwin-i.html">Baldwin I</a>
+                    </li>
+                    <li class="navigation-dropdown-item">
+                        <a class="navigation-dropdown-link" href="/timeline/baldwin-ii.html">Baldwin II</a>
+                    </li>
+                    <li class="navigation-dropdown-item">
+                        <a class="navigation-dropdown-link" href="/timeline/baldwin-iii.html">Baldwin III</a>
+                    </li>
+                    <li class="navigation-dropdown-item">
+                        <a class="navigation-dropdown-link" href="/timeline/baldwin-iv.html">Baldwin IV</a>
+                    </li>
+                    <li class="navigation-dropdown-item">
+                        <a class="navigation-dropdown-link" href="/timeline/baldwin-v.html">Baldwin V</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="navigation-item">
+                <a class="navigation-link" href="/shop.html">Shop</a>
+                <ul class="navigation-dropdown">
+                    <li class="navigation-dropdown-item">
+                        <a class="navigation-dropdown-link" href="/shop/tshirts.html">T-Shirts</a>
+                    </li>
+                    <li class="navigation-dropdown-item">
+                        <a class="navigation-dropdown-link" href="/shop/flags.html">Flags</a>
+                    </li>
+                    <li class="navigation-dropdown-item">
+                        <a class="navigation-dropdown-link" href="/shop/merchandise.html">Other Merchandise</a>
+                    </li>
+                    <li class="navigation-dropdown-item">
+                        <a class="navigation-dropdown-link" href="/shop/featured.html">Featured Products</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="navigation-item">
+                <a class="navigation-link" href="/videos.html">Videos</a>
+                <ul class="navigation-dropdown">
+                    <li class="navigation-dropdown-item">
+                        <a class="navigation-dropdown-link" href="/videos/documentaries.html">Historical Documentaries</a>
+                    </li>
+                    <li class="navigation-dropdown-item">
+                        <a class="navigation-dropdown-link" href="/videos/fan-creations.html">Fan Creations</a>
+                    </li>
+                    <li class="navigation-dropdown-item">
+                        <a class="navigation-dropdown-link" href="/videos/events.html">Event Recordings</a>
+                    </li>
+                    <li class="navigation-dropdown-item">
+                        <a class="navigation-dropdown-link" href="/videos/latest.html">Latest Uploads</a>
+                    </li>
+                    <li class="navigation-dropdown-item">
+                        <a class="navigation-dropdown-link" href="/videos/popular.html">Popular Videos</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="navigation-item">
+                <a class="navigation-link" href="/community.html">Community</a>
+                <ul class="navigation-dropdown">
+                    <li class="navigation-dropdown-item">
+                        <a class="navigation-dropdown-link" href="/community/facebook.html">Facebook Group</a>
+                    </li>
+                    <li class="navigation-dropdown-item">
+                        <a class="navigation-dropdown-link" href="/community/events.html">Events Calendar</a>
+                    </li>
+                    <li class="navigation-dropdown-item">
+                        <a class="navigation-dropdown-link" href="/community/contributions.html">Community Contributions</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="navigation-item">
+                <a class="navigation-link" href="/blog.html">Blog</a>
+                <ul class="navigation-dropdown">
+                    <li class="navigation-dropdown-item">
+                        <a class="navigation-dropdown-link" href="/blog/historical-articles.html">Historical Articles</a>
+                    </li>
+                    <li class="navigation-dropdown-item">
+                        <a class="navigation-dropdown-link" href="/blog/news.html">News & Updates</a>
+                    </li>
+                    <li class="navigation-dropdown-item">
+                        <a class="navigation-dropdown-link" href="/blog/opinion.html">Opinion Pieces</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="navigation-item">
+                <a class="navigation-link" href="/about.html">About</a>
+            </li>
+            <li class="navigation-item">
+                <a class="navigation-link" href="/contact.html">Contact</a>
+            </li>
+            <li class="navigation-item btn-box">
+                <button class="login-btn" onClick="netlifyIdentity.open()">Log in</button>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+    <!-- This is the Headline, subtitle, & Product/Services images and descriptions (Above the fold)  -->
+    <header class="main margin-bottom-24 background100">
+        <section class="hero-container-left">
+            <h1>Residential & Commercial Plumbing in Vandalia, Ohio</h1>
+            <div class="subtitle margin-bottom-16">
+                Tell us about your <strong>toilet problems</strong>. We'll help answer any questions and offer a
+                <strong>free estimate</strong>.
+            </div>
+            <div id="toilet-repair" class="button-container">
+                <button class="primary-btn button-text"><img src="/Svgs/Call Integrity Plumbing Solutions.svg"
+                        alt="call icon" aria-label="Call Integrity Plumbing Solutions.">call now</button>
+                <a href="#request-quote" class="no-style secondary-btn button-text"><img
+                        src="/Svgs/Request An Estimate.svg" alt="call icon"
+                        aria-label="Call Integrity Plumbing Solutions.">Request a quote</a>
+            </div>
+        </section>
+        <img class="main-img margin-top-8" src="/imgs/interior-of-a-kitchen-2022-05-20-05-51-06-utc.jpg" alt="">
+    </header>
+
+<!-- This is the main content of the page  -->
+
+    <section class="main margin-bottom-0">
+        <div class="container">
+            <h2>Plumbing Solutions</h2>
+            <h3 class="blue">How can we help you?</h3>
+        </div>
+    </section>
+    
+        <main class="rounded-corners margin-bottom-48">
+            <article class="article">
+
+                <div class="background100 rounded-corners padding-24 margin-bottom-24">
+                    <h3>Services For Home Owners</h3>
+                    <p class="margin-bottom-8">Learn how we help home owners maintain their plumbing systems, appliances, and fixtures with these
+                        services.</p>
+                    <button class="text-and-icon-btn secondary-btn button-text"><span>&#10140;</span>Residential plumbing</button>
+                </div>
+        
+                <div class="background100 rounded-corners padding-24 margin-bottom-24">
+                    <h3>Services 
+                        For Businesses</h3>
+                    <p class="margin-bottom-8">Learn how we help homeowners like you fix and maintain the plumbing systems and fixtures in their
+                        home.</p>
+                    <button class="text-and-icon-btn secondary-btn button-text"><span>&#10140;</span>Commercial plumbing</button>
+                </div>
+        
+                <div class="background100 padding-24 margin-bottom-24">
+                    <h3>Services For Builders & Developers</h3>
+                    <p class="margin-bottom-8">Learn how we help homeowners fix and maintain the plumbing systems and fixtures in their home.</p>
+                    <button class="text-and-icon-btn secondary-btn button-text"><span>&#10140;</span>New Construction</button>
+                </div>
+        
+            </article>
+        <aside class="background100 padding-16 rounded-corners">
+            <div class="rounded-corners padding-16">
+                <h5>Contents</h5>
+                <div>
+                    <a class="no-style" href="#toilet-repair">Toilet Repair</a>
+                    <br>
+                    <a class="no-style" href="#toilet-repair-estimate-table">Estimate Table</a>
+                    <br>
+                    <a class="no-style" href="#toilet-replacement">Toilet Replacement</a>
+                    <br>
+                    <a class="no-style" href="#toilets-we-install">Toilets we Install</a>
+                    <br>
+                    <a class="no-style" href="#faq">FAQ</a>
+                </div>
+            </div>
+        </aside>
+
+        <article class="article">
+            <h2>Toilet Repair</h2>
+            <div class="subtitle">We're <a class="no-style blue" href="/aboutUs.html"><abbr class="no-style"
+                        title="Integrity Plumbing Solutions Inc.">IPS</abbr></a>—you're local <strong
+                    class="no-style">toilet fixers</strong></div>
+            <p>
+                When your <strong class="no-style">toilet isn't working correctly</strong>, it's no laughing matter.
+                Aside from the unsanitary conditions caused by a <strong class="no-style">clogged or leaking
+                    toilet</strong>, you also risk a more severe leak from the plumbing lines connected to your toilet
+                if <strong class="no-style">the toilet is loose or unstable</strong>.
+            </p>
+            <p>Without proper maintaince, a leaking or faulty toilet can lead to significant water damage to your
+                property. If you need information, or <a href="#">help</a> resolving <strong class="no-style">common
+                    toilet issues</strong>, or if you need any of the <strong class="no-style">toilet repair
+                    services</strong> listed on this page, don't hesitate to contact us.</p>
+            <br>
+            <img src="/imgs/IPS person using plunger (Toilet Repair).png"
+                alt="Integrity Plumbing employee using plunger to unclog a toilet.">
+            <br>
+            <h3 id="toilet-repair-estimate-table">Toilet repair estimate table:</h3>
+            <p>You can use the table below to compare toilet issues, repair options, and get a general price estimation.
+                The price can vary depending on several factors, including the type of toilet, toilet removal,
+                accessibility, special features, and the condition of your plumbing.
+            </p>
+            <br>
+            <table>
+                <tr>
+                    <th class="label-large">Toilet problems</th>
+                    <th class="label-large">Repair Solutions</th>
+                    <th class="label-large">Estimate</th>
+                </tr>
+                <tr>
+                    <td class="label-medium">Toilet flushes & overflows</td>
+                    <td class="label-medium">Auger/Snake toilet</td>
+                    <td class="label-medium">$99-$700</td>
+                </tr>
+                <tr>
+                    <td class="label-medium">Toilet is running</td>
+                    <td class="label-medium">Float/Flapper repair</td>
+                    <td class="label-medium">$50-$400</td>
+                </tr>
+                <tr>
+                    <td class="label-medium">Toilet won't flush</td>
+                    <td class="label-medium">Toilet handle repair</td>
+                    <td class="label-medium">$85-$600</td>
+                </tr>
+                <tr id="toilet-replacement">
+                    <td class="label-medium">Toilet leaks from base</td>
+                    <td class="label-medium">Wax ring/Flange repair</td>
+                    <td class="label-medium">$85-$600</td>
+                </tr>
+                </tr>
+                <tr>
+                    <td class="label-medium">Toilet leaks from bolts</td>
+                    <td class="label-medium">Toilet tank repair</td>
+                    <td class="label-medium">$85-$600</td>
+                </tr>
+                <tr>
+                    <td class="label-medium">Toilet flushes slowly</td>
+                    <td class="label-medium">Requires Inspection*</td>
+                    <td class="label-medium">$85-$600</td>
+                </tr>
+            </table>
+            <br>
+        </article>
+        <article id="toilet-replacement" class="article margin-bottom-8">
+
+            <h2>Toilet Replacement & Installation</h2>
+            <div class="subtitle">
+                Upgrade and Save
+            </div>
+            <p>
+                If your toilet has developed cracks or leaks, uses far too much water per flush, or is simply a shade of
+                green not seen in 20 years, it may be time to replace it.
+            </p>
+            <p>
+                With so many options on the market, choosing a toilet to fit your living space or office can be
+                challenging. Regardless of which type of toilet you choose, one thing remains: Installing a new toilet
+                without the proper knowledge can be a dirty and tedious process.
+            </p>
+
+            <p> We recommend hiring certified plumbers and professional technicians for new toilet installation or
+                toilet
+                replacement. Feel free to contact us, its the quickest way to get your new toilet installed and working
+                properly.
+            </p>
+            <br>
+            <img id="toilets-we-install" src="/imgs/IPS Toilet Replacement.png">
+            <br>
+        </article>
+
+        <article class="article">
+            <h2>Toilets We Install</h2>
+            <div class="subtitle">
+                We'll help you find the right toilet!
+            </div>
+            <div class="flex">
+                <ul class="padding-8">
+                    <h5>Makes</h5>
+                    <li class="no-style margin-top-8"><span class="blue">✔</span>  Comfort-height toilets</li>
+                    <li class="no-style"><span class="blue">✔</span>  Gravity-fed toilets</li>
+                    <li class="no-style"><span class="blue">✔</span>  Dual-flush toilets</li>
+                    <li class="no-style"><span class="blue">✔</span>  Double-cyclone toilets</li>
+                    <li class="no-style"><span class="blue">✔</span>  One-piece toilets</li>
+                    <li class="no-style"><span class="blue">✔</span>  Two-piece toilets</li>
+                    <li class="no-style"><span class="blue">✔</span>  Wall-hanging toilets</li>
+                </ul>
+                <br>
+                <ul class="padding-8">
+                    <h5>Brands</h5>
+                    <li class="no-style margin-top-8"><span class="blue">✔</span>  PROFLO toilets</li>
+                    <li class="no-style"><span class="blue">✔</span>  Kohler toilets</li>
+                    <li class="no-style"><span class="blue">✔</span>  American Standard Toilets</li>
+                    <li class="no-style"><span class="blue">✔</span>  Mansfield toilets</li>
+                    <li class="no-style"><span class="blue">✔</span>  Zurn Toilets</li>
+                    <li class="no-style"><span class="blue">✔</span>  Signature Hardware Toilets</li>
+                    <li class="no-style"><span class="blue">✔</span>  Flushometer-valve toilets</li>
+                </ul>
+            </div>
+            <br>
+            <img src="/imgs/Toilet Brands.png" alt="Integrity Plumbing employee using plunger to unclog a toilet.">
+            <br id="faq">
+        </article>
+
+    </main>
+
+    <my-footer></my-footer>
+
+    <script>var navigation = new Navigation(document.getElementById("navigation"), {
+            overlayColor: "#31A6FF"
+        });</script>
+</body>
+
+</html>
