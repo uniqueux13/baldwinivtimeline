@@ -10,29 +10,50 @@
 </head>
 <body>
     <!-- Navigation Section -->
-    <nav class="navigation">
-        <div class="container">
-            <div class="navigation-header">
-                <div class="navigation-logo">
-                    <a href="/">
-                        <img src="img/logo.png" alt="Logo"> <!-- Update with your logo -->
-                    </a>
-                </div>
-                <button class="navigation-button-toggler">
-                    <span class="hamburger-icon"></span>
-                </button>
-            </div>
-            <div class="navigation-body">
-                <ul class="navigation-menu">
-                    <li class="navigation-item"><a href="/" class="navigation-link">Home</a></li>
-                    <li class="navigation-item"><a href="/timeline.html" class="navigation-link">Timeline</a></li>
-                    <li class="navigation-item"><a href="/shop" class="navigation-link">Shop</a></li>
-                    <li class="navigation-item"><a href="/about" class="navigation-link">About</a></li>
-                </ul>
-            </div>
+<nav id="navigation" class="navigation navigation-justified">        
+    <div class="navigation-header">
+        <div class="navigation-logo">
+            <a href="#">
+                <img src="/imgs/Logo Mark.png" alt="logo">
+            </a>
         </div>
+        <div class="navigation-button-toggler">
+            <i class="hamburger-icon"></i>
+        </div>
+    </div>
+    
+    <div class="navigation-body">
+        <div class="navigation-body-header">
+            <div class="navigation-logo">
+                <a href="#">
+                    <img src="/imgs/Logo Mark.png" alt="logo">
+                </a>
+            </div>
+        <div class="brand">Unique UX</div>
+            <span class="navigation-body-close-button">&#10005;</span>
+        </div>
+        
+        <ul class="navigation-menu">
+            <li class="navigation-item is-active">
+                <a class="navigation-link" href="/index.html">Home</a>
+            </li>
+            <li class="navigation-item">
+                <a class="navigation-link" href="/learn.html">Learn</a>
+             </li>
+             <li class="navigation-item">
+                 <a class="navigation-link" href="/blog/blog.html">Blog</a>
+            </li>
+             <li class="navigation-item">
+                  <a class="navigation-link" href="/about.html">About</a>
+              </li>
+             <li class="navigation-item">
+                <a class="navigation-link" href="/contact.html">Contact</a>
+             </li>
+             <li class="navigation-item btn-box">
+                 <button class="login-btn" onClick="netlifyIdentity.open()">Log in</button>
+             </li>
+        </ul>
     </nav>
-
     <!-- Main Content Section -->
     <section class="home-content">
         <div class="container">
