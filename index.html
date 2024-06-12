@@ -10,7 +10,8 @@
 </head>
 <body>
     <!-- Navigation Section -->
-<nav id="navigation" class="navigation navigation-justified">        
+<!-- Navigation Section -->
+<nav id="navigation" class="navigation navigation-justified">
     <div class="navigation-header">
         <div class="navigation-logo">
             <a href="#">
@@ -21,7 +22,6 @@
             <i class="hamburger-icon"></i>
         </div>
     </div>
-    
     <div class="navigation-body">
         <div class="navigation-body-header">
             <div class="navigation-logo">
@@ -29,31 +29,110 @@
                     <img src="/img/Logo.png" alt="logo">
                 </a>
             </div>
-        <div class="brand">Unique UX</div>
+            <div class="brand">Unique UX</div>
             <span class="navigation-body-close-button">&#10005;</span>
         </div>
-        
         <ul class="navigation-menu">
             <li class="navigation-item is-active">
                 <a class="navigation-link" href="/index.html">Home</a>
             </li>
             <li class="navigation-item">
-                <a class="navigation-link" href="/learn.html">Learn</a>
-             </li>
-             <li class="navigation-item">
-                 <a class="navigation-link" href="/blog/blog.html">Blog</a>
+                <a class="navigation-link" href="/timeline.html">Timeline</a>
+                <ul class="navigation-dropdown">
+                    <li class="navigation-dropdown-item">
+                        <a class="navigation-dropdown-link" href="/timeline/baldwin-i.html">Baldwin I</a>
+                    </li>
+                    <li class="navigation-dropdown-item">
+                        <a class="navigation-dropdown-link" href="/timeline/baldwin-ii.html">Baldwin II</a>
+                    </li>
+                    <li class="navigation-dropdown-item">
+                        <a class="navigation-dropdown-link" href="/timeline/baldwin-iii.html">Baldwin III</a>
+                    </li>
+                    <li class="navigation-dropdown-item">
+                        <a class="navigation-dropdown-link" href="/timeline/baldwin-iv.html">Baldwin IV</a>
+                    </li>
+                    <li class="navigation-dropdown-item">
+                        <a class="navigation-dropdown-link" href="/timeline/baldwin-v.html">Baldwin V</a>
+                    </li>
+                </ul>
             </li>
-             <li class="navigation-item">
-                  <a class="navigation-link" href="/about.html">About</a>
-              </li>
-             <li class="navigation-item">
+            <li class="navigation-item">
+                <a class="navigation-link" href="/shop.html">Shop</a>
+                <ul class="navigation-dropdown">
+                    <li class="navigation-dropdown-item">
+                        <a class="navigation-dropdown-link" href="/shop/tshirts.html">T-Shirts</a>
+                    </li>
+                    <li class="navigation-dropdown-item">
+                        <a class="navigation-dropdown-link" href="/shop/flags.html">Flags</a>
+                    </li>
+                    <li class="navigation-dropdown-item">
+                        <a class="navigation-dropdown-link" href="/shop/merchandise.html">Other Merchandise</a>
+                    </li>
+                    <li class="navigation-dropdown-item">
+                        <a class="navigation-dropdown-link" href="/shop/featured.html">Featured Products</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="navigation-item">
+                <a class="navigation-link" href="/videos.html">Videos</a>
+                <ul class="navigation-dropdown">
+                    <li class="navigation-dropdown-item">
+                        <a class="navigation-dropdown-link" href="/videos/documentaries.html">Historical Documentaries</a>
+                    </li>
+                    <li class="navigation-dropdown-item">
+                        <a class="navigation-dropdown-link" href="/videos/fan-creations.html">Fan Creations</a>
+                    </li>
+                    <li class="navigation-dropdown-item">
+                        <a class="navigation-dropdown-link" href="/videos/events.html">Event Recordings</a>
+                    </li>
+                    <li class="navigation-dropdown-item">
+                        <a class="navigation-dropdown-link" href="/videos/latest.html">Latest Uploads</a>
+                    </li>
+                    <li class="navigation-dropdown-item">
+                        <a class="navigation-dropdown-link" href="/videos/popular.html">Popular Videos</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="navigation-item">
+                <a class="navigation-link" href="/community.html">Community</a>
+                <ul class="navigation-dropdown">
+                    <li class="navigation-dropdown-item">
+                        <a class="navigation-dropdown-link" href="/community/facebook.html">Facebook Group</a>
+                    </li>
+                    <li class="navigation-dropdown-item">
+                        <a class="navigation-dropdown-link" href="/community/events.html">Events Calendar</a>
+                    </li>
+                    <li class="navigation-dropdown-item">
+                        <a class="navigation-dropdown-link" href="/community/contributions.html">Community Contributions</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="navigation-item">
+                <a class="navigation-link" href="/blog.html">Blog</a>
+                <ul class="navigation-dropdown">
+                    <li class="navigation-dropdown-item">
+                        <a class="navigation-dropdown-link" href="/blog/historical-articles.html">Historical Articles</a>
+                    </li>
+                    <li class="navigation-dropdown-item">
+                        <a class="navigation-dropdown-link" href="/blog/news.html">News & Updates</a>
+                    </li>
+                    <li class="navigation-dropdown-item">
+                        <a class="navigation-dropdown-link" href="/blog/opinion.html">Opinion Pieces</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="navigation-item">
+                <a class="navigation-link" href="/about.html">About</a>
+            </li>
+            <li class="navigation-item">
                 <a class="navigation-link" href="/contact.html">Contact</a>
-             </li>
-             <li class="navigation-item btn-box">
-                 <button class="login-btn" onClick="netlifyIdentity.open()">Log in</button>
-             </li>
+            </li>
+            <li class="navigation-item btn-box">
+                <button class="login-btn" onClick="netlifyIdentity.open()">Log in</button>
+            </li>
         </ul>
-    </nav>
+    </div>
+</nav>
     <!-- Main Content Section -->
     <section class="home-content">
         <div class="container">
