@@ -1,18 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-
-/*TABLE OF CONTENTS 
-1. Global Styles
-  1.1 Colors
-
-
-
-
-*/
-
-
-/*//////// 1. GLOBAL STYLES ///////*/
-
 :root {
   /*//////// 1.1 COLORS ///////*/
       /*Primary Colors*/
@@ -96,6 +83,23 @@
       scroll-behavior: auto !important;
     }
   }
+
+  .brand {
+    color: #f7f458; /* Bright yellow color */
+    margin-inline: 0.4rem;
+    font-family: 'roboto', sans-serif; /* Stylish, readable font */
+    font-weight: 600; /* Bold weight for emphasis */
+    font-size: 1.5rem; /* Slightly larger font size for prominence */
+    letter-spacing: 0.5px; /* Slightly increased letter spacing for readability */
+    text-shadow: 0 0 5px rgba(255, 252, 93, 0.8),  /* Inner glow */
+                 0 0 10px rgba(255, 252, 93, 0.4), /* Middle glow */
+                 0 0 20px rgba(255, 252, 93, 0.2), /* Outer glow */
+                 -1px -1px 2px #000,               /* Dark outline */
+                 1px 1px 2px #000, 
+                 -1px 1px 2px #000, 
+                 1px -1px 2px #000; 
+}
+
 
 /*//////// AREAS & GRIDS ///////*/
 
@@ -292,7 +296,7 @@
         grid-template-columns: repeat(12, 72px);
         grid-auto-flow: column;
         text-align: center;
-        background-color: white;
+        background-color: transparent;
        }
     } 
 
@@ -946,19 +950,19 @@ outline: 1px solid var(--Primary-400);
 @media screen and (min-width: 992px) {
   .container {
     grid-column: 1 / 13;
-    background-color: none;
+    background-color: transparent;
   }
 }
 @media screen and (min-width: 1280px) {
   .container {
     grid-column: 1 / 13;
-    background-color: white;
+    background-color: transparent;
   }
 }
 @media screen and (min-width: 1440px) {
   .container {
     grid-column: 1 / 13;
-    background-color: white;
+    background-color: transparent;
   }
 }
 
