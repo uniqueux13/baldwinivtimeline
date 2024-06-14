@@ -117,7 +117,7 @@
     padding-inline: .5rem;
     }
 
-    main {
+     {
       flex-grow: 1;
       place-self: center;
       padding-inline: .5rem;
@@ -225,7 +225,7 @@
         padding: 1rem;
         grid-template-columns: repeat(8, 1fr);
         gap: 1rem;
-        background-color: #2A2A2A;
+        background-color: #1a1a1a;
         margin: 0;
       }
     } 
@@ -240,7 +240,7 @@
         grid-template-columns: repeat(8, 1fr);
         grid-auto-flow: column;
         text-align: center;
-        background-color: #2A2A2A;
+        background-color: #1a1a1a;
       }
     } 
 
@@ -255,7 +255,7 @@
             grid-template-columns: repeat(12, 1fr);
             grid-auto-flow: column;
             text-align: center;
-            background-color: #2A2A2A;
+            background-color: #1a1a1a;
           }
         } 
 
@@ -269,7 +269,7 @@
         grid-template-columns: repeat(12, 1fr);
         grid-auto-flow: column;
         text-align: center;
-        background-color: #2A2A2A;
+        background-color: #1a1a1a;
       }
     } 
 
@@ -283,7 +283,7 @@
             grid-template-columns: repeat(12, 1fr);
             grid-auto-flow: column;
             text-align: center;
-            background-color: #2A2A2A;
+            background-color: #1a1a1a;
            }
         } 
 
@@ -297,7 +297,7 @@
         grid-template-columns: repeat(12, 72px);
         grid-auto-flow: column;
         text-align: center;
-        background-color: #2A2A2A;
+        background-color: #1a1a1a;
        }
     } 
 
