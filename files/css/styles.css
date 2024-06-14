@@ -108,6 +108,7 @@
     flex-direction: column;
     font-family: var(--primary-font-stack);
     color: var(--Primary-500);
+    background-color: #1a1a1a;
     line-height: 1.5;
     }
 
