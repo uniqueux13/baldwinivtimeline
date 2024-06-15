@@ -157,7 +157,7 @@
     } 
 
     footer {
-      background-color: var(--secondary-500);
+      background-color: 1a1a1a;
     }
 
     .footer {
@@ -214,7 +214,6 @@
 
 
     a {
-      color: var(--tertiary-500);
       font-weight: 400;
     }
 
@@ -366,41 +365,41 @@
     article {
       grid-column: 1 / 9;
       text-align: left;
-      background-color: #1f1f1f;
+      background-color: #1A1A1A;
     }
 
     @media screen and (min-width: 576px) {
       article {
         grid-column: 1 / 9;
-        background-color: #1f1f1f;
+        background-color: #1A1A1A;
       }
     }
 
     @media screen and (min-width: 906px) {
       article{
         grid-column: 1 / 13;
-        background-color: #1f1f1f;
+        background-color: #1A1A1A;
       }
     }
 
     @media screen and (min-width: 992px) {
       article{
         grid-column: 1 / 9;
-        background-color: #1f1f1f;
+        background-color: #1A1A1A;
       }
     }
 
     @media screen and (min-width: 1280px) {
       article {
         grid-column: 1 / 9;
-        background-color: #1f1f1f;
+        background-color: #1A1A1A;
       }
     }
     @media screen and (min-width: 1440px) {
       article {
         grid-column: 1 / 9;      
         text-align: left;
-        background-color: #1f1f1f;
+        background-color: #1A1A1A;
       }
     }
 
@@ -554,7 +553,7 @@
   }
 
   h2 {
-    color: var(--Primary-500);
+    color: var(--title);
     font-size: clamp(1.563rem, 4vmin, 2.441rem);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Open Sans', 'Helvetica Neue', sans-serif;    
     font-weight: 400;
@@ -563,7 +562,7 @@
   }
 
 h3 {
-    color: var(--secondary-500);
+    color: var(--title);
     font-size: clamp(1.25rem, 3vmin, 1.953rem);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Open Sans', 'Helvetica Neue', sans-serif;    
     font-weight: 400;
@@ -600,7 +599,7 @@ h4 {
 }
 
 h5 {
-  color: var(--secondary-500);
+  color: var(--title);
   font-size: 1.44rem;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: 400;
@@ -691,6 +690,7 @@ q {
     font-weight: 400;
     line-height: 1.7;
     max-width: 80ch;
+    color: white;
   }
 
   .label-large {
@@ -1138,8 +1138,10 @@ margin-top: .25rem;
 }
 
 .background200 {
-  background-color: white;
+  background: linear-gradient(135deg, #257EBF, #FF00FF, #00FF00);
 }
+
+
 
 .background300 {
   background-color: var(--secondary-500);
@@ -1154,14 +1156,14 @@ margin-top: .25rem;
   padding: 12px;
   margin: 12px;
   gap: 4px;
-  background-color: white;
+  background-color: #2a2a2a;
 }
 
 @media screen and (min-width: 576px) {
   .form {
     grid-column: 1 / 9;
     grid-row: 1 / 2;
-    background-color: white;
+    background-color: #2a2a2a;
   }
 }
 
@@ -1170,7 +1172,7 @@ margin-top: .25rem;
     grid-column: 1 / 9;
     grid-row: 1 / 2;
     padding: 1.5rem;
-    background-color: white;
+    background-color: #2a2a2a;
   }
 }
 
@@ -1179,7 +1181,7 @@ margin-top: .25rem;
     grid-column: 7 / 13;
     grid-row: 1 / 7;
     padding: 1.5rem;
-    background-color: white;
+    background-color: #2a2a2a;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -1187,7 +1189,7 @@ margin-top: .25rem;
     grid-column: 7 / 13;
     grid-row: 1 / 7;
     padding: 2rem;
-    background-color: white;
+    background-color: #2a2a2a;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -1195,7 +1197,10 @@ margin-top: .25rem;
     grid-column: 7 / 13;
     grid-row: 1 / 7;
     padding: 2rem;
-    background-color: white;
+    background-color: #006cfa; /* Neon teal */
+    color: #000000; /* Black text for readability */
+    padding: 24px;
+    border-radius: 8px;
     height: fit-content;
   }
 }
@@ -1486,3 +1491,71 @@ textarea {
   position: sticky;
   -webkit: Sticky;
 }
+
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+.carousel {
+  display: flex;
+  gap: 16px;
+  overflow-x: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+.carousel-item {
+  min-width: 300px;
+  scroll-snap-align: start;
+  background: #1a1a1a;
+  border-radius: 8px;
+  padding: 0px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+.carousel-image {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+}
+.carousel-control.prev {
+  left: 0;
+}
+.carousel-control.next {
+  right: 0;
+}
+/* Add this to your styles.css */
+
+.quick-fact {
+  font-size: 0.875rem; /* Smaller font size */
+  color: #ccc; /* Light gray color for better readability in dark mode */
+  padding: 8px; /* Less padding for a compact look */
+}
+
+.quick-fact h3 {
+  font-size: 1rem; /* Smaller heading size */
+  margin-bottom: 4px; /* Reduced margin */
+  color: white; /* Bright color to stand out */
+}
+
+.quick-fact .subtitle {
+  font-size: 0.875rem; /* Smaller subtitle size */
+  color: #ffd700; /* Gold color for subtitle */
+  margin-bottom: 8px; /* Reduced margin */
+}
+
+.quick-fact p {
+  margin-bottom: 8px; /* Reduced margin for paragraph */
+}
+
