@@ -5,248 +5,296 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>King Baldwin IV Timeline</title>
-    <link rel="stylesheet" href="/style.css">
+    <title>Baldwin IV</title>
+    <link rel="stylesheet" href="./files/css/styles.css">
+    <link rel="stylesheet" href="/files/css/navigation.css">
+    <script type="text/javascript" src="/files/js/navigation.js"></script>
+    <script type="module" src="/files/js/main.js"></script>
 </head>
-    <body>
-    <section class="h--timeline js-h--timeline">
-        <div class="h--timeline-container">
-            <div class="h--timeline-dates">
-                <div class="h--timeline-line">
-                    <ol>
-                        <li><a href="#0" data-date="16/01/2014" class="h--timeline-date h--timeline-date--selected">Introduction</a></li>
-                        <li><a href="#0" data-date="19/09/2022" class="h--timeline-date">1161</a></li>
-                        <li><a href="#0" data-date="19/09/2022" class="h--timeline-date">1174</a></li>
-                        <li><a href="#0" data-date="26/09/2022" class="h--timeline-date">1177</a></li>
-                        <li><a href="#0" data-date="03/10/2022" class="h--timeline-date">1183</a></li>
-                        <li><a href="#0" data-date="10/10/2022" class="h--timeline-date">1185</a></li>
-                    </ol>
 
-                    <span class="h--timeline-filling-line" aria-hidden="true"></span>
-                </div> <!-- .h--timeline-line -->
-            </div> <!-- .h--timeline-dates -->
+<body>
+    <!-- Navigation Section -->
+    <nav id="navigation" class="navigation navigation-justified">
+        <div class="navigation-header">
+            <div class="navigation-logo">
+                <a href="#">
+                    <img src="/img/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="navigation-button-toggler">
+                <i class="hamburger-icon"></i>
+            </div>
+        </div>
+        <div class="navigation-body">
+            <div class="navigation-body-header">
+                <div class="navigation-logo">
+                    <a href="#">
+                        <img src="/img/logo.png" alt="logo">
+                    </a>
+                </div>
+                <div class="brand">Unique UX</div>
+                <span class="navigation-body-close-button">&#10005;</span>
+            </div>
+            <ul class="navigation-menu">
+                <li class="navigation-item is-active">
+                    <a class="navigation-link" href="/index.html">Home</a>
+                </li>
+                <li class="navigation-item">
+                    <a class="navigation-link" href="/timeline.html">Timeline</a>
+                    <ul class="navigation-dropdown">
+                        <li class="navigation-dropdown-item">
+                            <a class="navigation-dropdown-link" href="/timeline/baldwin-i.html">Baldwin I</a>
+                        </li>
+                        <li class="navigation-dropdown-item">
+                            <a class="navigation-dropdown-link" href="/timeline/baldwin-ii.html">Baldwin II</a>
+                        </li>
+                        <li class="navigation-dropdown-item">
+                            <a class="navigation-dropdown-link" href="/timeline/baldwin-iii.html">Baldwin III</a>
+                        </li>
+                        <li class="navigation-dropdown-item">
+                            <a class="navigation-dropdown-link" href="/timeline/baldwin-iv.html">Baldwin IV</a>
+                        </li>
+                        <li class="navigation-dropdown-item">
+                            <a class="navigation-dropdown-link" href="/timeline/baldwin-v.html">Baldwin V</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="navigation-item">
+                    <a class="navigation-link" href="/shop.html">Shop</a>
+                    <ul class="navigation-dropdown">
+                        <li class="navigation-dropdown-item">
+                            <a class="navigation-dropdown-link" href="/shop/tshirts.html">T-Shirts</a>
+                        </li>
+                        <li class="navigation-dropdown-item">
+                            <a class="navigation-dropdown-link" href="/shop/flags.html">Flags</a>
+                        </li>
+                        <li class="navigation-dropdown-item">
+                            <a class="navigation-dropdown-link" href="/shop/merchandise.html">Other Merchandise</a>
+                        </li>
+                        <li class="navigation-dropdown-item">
+                            <a class="navigation-dropdown-link" href="/shop/featured.html">Featured Products</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="navigation-item">
+                    <a class="navigation-link" href="/videos.html">Videos</a>
+                    <ul class="navigation-dropdown">
+                        <li class="navigation-dropdown-item">
+                            <a class="navigation-dropdown-link" href="/videos/documentaries.html">Historical Documentaries</a>
+                        </li>
+                        <li class="navigation-dropdown-item">
+                            <a class="navigation-dropdown-link" href="/videos/fan-creations.html">Fan Creations</a>
+                        </li>
+                        <li class="navigation-dropdown-item">
+                            <a class="navigation-dropdown-link" href="/videos/events.html">Event Recordings</a>
+                        </li>
+                        <li class="navigation-dropdown-item">
+                            <a class="navigation-dropdown-link" href="/videos/latest.html">Latest Uploads</a>
+                        </li>
+                        <li class="navigation-dropdown-item">
+                            <a class="navigation-dropdown-link" href="/videos/popular.html">Popular Videos</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="navigation-item">
+                    <a class="navigation-link" href="/community.html">Community</a>
+                    <ul class="navigation-dropdown">
+                        <li class="navigation-dropdown-item">
+                            <a class="navigation-dropdown-link" href="/community/facebook.html">Facebook Group</a>
+                        </li>
+                        <li class="navigation-dropdown-item">
+                            <a class="navigation-dropdown-link" href="/community/events.html">Events Calendar</a>
+                        </li>
+                        <li class="navigation-dropdown-item">
+                            <a class="navigation-dropdown-link" href="/community/contributions.html">Community Contributions</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="navigation-item">
+                    <a class="navigation-link" href="/blog.html">Blog</a>
+                    <ul class="navigation-dropdown">
+                        <li class="navigation-dropdown-item">
+                            <a class="navigation-dropdown-link" href="/blog/historical-articles.html">Historical Articles</a>
+                        </li>
+                        <li class="navigation-dropdown-item">
+                            <a class="navigation-dropdown-link" href="/blog/news.html">News & Updates</a>
+                        </li>
+                        <li class="navigation-dropdown-item">
+                            <a class="navigation-dropdown-link" href="/blog/opinion.html">Opinion Pieces</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="navigation-item">
+                    <a class="navigation-link" href="/about.html">About</a>
+                </li>
+                <li class="navigation-item">
+                    <a class="navigation-link" href="/contact.html">Contact</a>
+                </li>
+                <li class="navigation-item btn-box">
+                    <button class="login-btn" onClick="netlifyIdentity.open()">Log in</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-            <nav class="h--timeline-navigation-container">
-                <ul>
-                    <li><a href="#0"
-                            class="text-replace h--timeline-navigation h--timeline-navigation--prev h--timeline-navigation--inactive">Prev</a>
-                    </li>
-                    <li><a href="#0" class="text-replace h--timeline-navigation h--timeline-navigation--next">Next</a>
-                    </li>
-                </ul>
-            </nav>
-            
-        </div> <!-- .h--timeline-container -->
-        
-        <div class="h--timeline-events">
-            <ol>
-                <li class="h--timeline-event h--timeline-event--selected text-component">
-                    <div class="h--timeline-event-content container">
-                        <h2 style="color: #fff;" class="h--timeline-event-title">Baldwin IV Timeline</h2>
-                        <h3 style="color: #fff; margin: 0; margin-bottom: 1rem; padding: 0;">Introduction</h3>
-                        <h4 style="color: #fff; margin: 0; padding: 0;">Author: Unique UX</h4>
-                        <em style="margin: 0; padding: 0;" class="h--timeline-event-date">Created: June 8th, 2024</em>
-                        <p class="h--timeline-event-description">
-                            Welcome, Baldwin IV enthusiasts! Explore the detailed timeline of Baldwin IV, the Leper King. Click or tap on the circles above to navigate through the significant events in his life.
-                        </p>
-                    </div>
-                    <div class="h--timeline-event-content container">
-                        <img src="img/Baldwin IV Intro.png" alt="">
-                    </div>
-                    <div class="h--timeline-event-content container">
-                        <p class="h--timeline-event-description">
-                            Have an event you'd like to add to the Baldwin IV timeline? Submit your event using the form below.
-                        </p>
-                        
-                        <div class="interactive">
-                            <a href="https://forms.gle/BLQuwgDq8iQYPNcc8" target="_blank" class="submit-event-link">SUBMIT AN EVENT</a>
+    <!-- This is the Headline, subtitle, & Product/Services images and descriptions (Above the fold)  -->
+    <header class="main margin-bottom-24 background100">
+        <section class="hero-container-left">
+            <h1>The Legacy of Baldwin IV: The Leper King of Jerusalem</h1>
+            <div class="subtitle margin-bottom-16">
+                Explore the life and times of Baldwin IV, his battles, reign, and enduring legacy.
+            </div>
+            <div id="explore-timeline" class="button-container">
+                <button class="primary-btn button-text" alt="timeline icon" aria-label="Explore the Baldwin IV Timeline">Explore Timeline</button>
+                <a href="#shop" class="no-style secondary-btn button-text"><img src="/Svgs/shopicon.svg" alt="shop icon" aria-label="Shop Baldwin IV Merchandise">Shop Now</a>
+            </div>
+        </section>
+        <img class="main-img margin-top-8" src="/img/baldwin-iv-mascot.png" alt="Baldwin IV Mascot">
+    </header>
+
+    <!-- This is the main content of the page  -->
+    <main class="rounded-corners padding-16 margin-bottom-48">
+        <article id="site-introduction" class="article margin-bottom-8">
+            <h2>Who is Baldwin IV?</h2>
+            <div class="subtitle">
+                The Leper King of Jerusalem
+            </div>
+            <p>
+                Baldwin IV, known as the Leper King, was the ruler of Jerusalem from 1174 to 1185. Despite being afflicted with leprosy, he led his kingdom with remarkable courage and strategic acumen, achieving notable victories during his reign.
+            </p>
+        </article>
+        <br>
+        <article class="article">
+            <!-- Historical Timeline Section -->
+            <div class="background100 rounded-corners padding-16 margin-bottom-24">
+                <h3>Kingdom of Jerusalem: Baldwin's Reign</h3>
+                <!-- Only one image here -->
+                <div class="timeline-item">
+                    <a href="timeline.html#baldwin-iv">
+                        <img src="/img/baldwin-timeline-img.png" alt="Baldwin IV" class="timeline-image">
+                    </a>
+                </div>
+                <button class=" padding-16 text-and-icon-btn secondary-btn button-text"><span>&#10140;</span>View Now</button>
+            </div>
+
+            <!-- Carousel 2: Featured Merchandise Section -->
+            <div class="background200 rounded-corners padding-16 margin-bottom-24">
+                <h3>Featured Merchandise</h3>
+                <p class="margin-bottom-8">Discover our exclusive range of Baldwin IV-themed merchandise. From unique apparel to historical memorabilia, find the perfect item to showcase your passion.</p>
+                <div class="carousel-container">
+                    <div class="carousel" id="carousel-2">
+                        <!-- Product Item 1 -->
+                        <div class="carousel-item">
+                            <a href="/shop.html">
+                                <img src="/img/Product-1.png" alt="Product 1" class="carousel-image">
+                            </a>
+                        </div>
+                        <!-- Product Item 2 -->
+                        <div class="carousel-item">
+                            <a href="/shop.html">
+                                <img src="/img/product-2.png" alt="Product 2" class="carousel-image">
+                            </a>
+                        </div>
+                        <!-- Product Item 3 -->
+                        <div class="carousel-item">
+                            <a href="/shop.html">
+                                <img src="/img/product-3.png" alt="Product 3" class="carousel-image">
+                            </a>
+                        </div>
+                        <!-- Product Item 4 -->
+                        <div class="carousel-item">
+                            <a href="/shop.html">
+                                <img src="/img/product-4.png" alt="Product 4" class="carousel-image">
+                            </a>
                         </div>
                     </div>
-                    
-                </li>
+                    <button class="carousel-control prev" onclick="moveCarousel('carousel-2', 'prev')">&#10094;</button>
+                    <button class="carousel-control next" onclick="moveCarousel('carousel-2', 'next')">&#10095;</button>
+                </div>
+                <br>
+                <button class="padding-16 text-and-icon-btn secondary-btn button-text"><span>&#10140;</span>SHOP NOW</button>
+            </div>
 
-                <li class="h--timeline-event text-component">
-                    <div class="h--timeline-event-content container">
-                        <h2 style="color: #fff;" class="h--timeline-event-title">The Birth of Baldwin IV</h2>
-    <em class="h--timeline-event-date">1161</em>
-    <p>
-        Baldwin IV was born in 1161 to Amalric I of Jerusalem and Agnes of Courtenay. From a young age, he exhibited symptoms of leprosy, which would later earn him the nickname "The Leper King."
-    </p>
-    <div class="h--timeline-event-content container">
-        <img src="img/Marie-Komnene-and-Amalric-of-Jerusalem.jpg" alt="">
-    </div>
-    <div class="h--timeline-section">
-        <h3 class="h--timeline-subtitle">Early Signs of Leprosy</h3>
-        <p class="h--timeline-event-description">
-            Baldwin's condition was first noticed by his tutor, William of Tyre, who observed that Baldwin felt no pain in his right hand during play. This insensitivity to pain was an early sign of leprosy, a disease that would profoundly impact his life and reign.
-        </p>
-    </div>
-    <div class="h--timeline-section">
-        <h3 class="h--timeline-subtitle">Family Background</h3>
-        <p class="h--timeline-event-description">
-            Baldwin was the son of Amalric I, King of Jerusalem, and Agnes of Courtenay. His father was a strong ruler, and his mother came from the influential Courtenay family. Baldwin's royal lineage placed him in the line of succession from birth.
-        </p>
+            <!-- Carousel 3: Featured Videos Section -->
+            <div class="background100 rounded-corners padding-16 margin-bottom-24">
+                <h3>Featured Videos</h3>
+                <p class="margin-bottom-8">Explore our exclusive collection of Baldwin IV-themed videos. From historical documentaries to engaging tutorials, find the perfect video to enrich your knowledge and passion.</p>
+                <div class="carousel-container">
+                    <div class="carousel" id="carousel-3">
+                        <!-- Video Item 1 -->
+                        <div class="carousel-item">
+                            <a href="/videos.html">
+                                <img src="/img/video-thumbnail-1.png" alt="Video 1" class="carousel-image">
+                            </a>
+                            <p>Video Title 1</p>
+                        </div>
+                        <!-- Video Item 2 -->
+                        <div class="carousel-item">
+                            <a href="/videos.html">
+                                <img src="/img/video-thumbnail-2.png" alt="Video 2" class="carousel-image">
+                            </a>
+                            <p>Video Title 2</p>
+                        </div>
+                        <!-- Video Item 3 -->
+                        <div class="carousel-item">
+                            <a href="/videos.html">
+                                <img src="/img/video-thumbnail-3.png" alt="Video 3" class="carousel-image">
+                            </a>
+                            <p>Video Title 3</p>
+                        </div>
+                        <!-- Video Item 4 -->
+                        <div class="carousel-item">
+                            <a href="/videos.html">
+                                <img src="/img/video-thumbnail-4.png" alt="Video 4" class="carousel-image">
+                            </a>
+                            <p>Video Title 4</p>
+                        </div>
+                    </div>
+                    <button class="carousel-control prev" onclick="moveCarousel('carousel-3', 'prev')">&#10094;</button>
+                    <button class="carousel-control next" onclick="moveCarousel('carousel-3', 'next')">&#10095;</button>
+                </div>
+                <br>
+                <button class="padding-16 text-and-icon-btn secondary-btn button-text"><span>&#10140;</span>WATCH NOW</button>
+            </div>
+        </article>
 
-    </div>
-    <div class="h--timeline-section">
-        <h3 class="h--timeline-subtitle">Education</h3>
-        <p class="h--timeline-event-description">
-            Despite his illness, Baldwin received an education befitting a prince. His tutor, William of Tyre, documented his intelligence and determination. Baldwin was trained in the arts of war and governance, preparing him for his future role as king.
-        </p>
-        <div class="h--timeline-quote">
-            "Baldwin's disease was not apparent to others, but he felt no physical pain in his right hand and arm, which was a sign of the illness that was to mark his reign." - William of Tyre
-        </div>
-    </div>
-                        
-    <li class="h--timeline-event">
-        <div class="h--timeline-event-content container">
-            <h2 style="color: #fff;" class="h--timeline-event-title">Ascension to the Throne</h2>
-            <em class="h--timeline-event-date">1174</em>
-            <p>
-                Baldwin IV ascended to the throne of Jerusalem in 1174 at the age of 13 after the death of his father, Amalric I. Despite his young age and illness, he proved to be a capable and determined ruler.
-            </p>
-            <div class="h--timeline-event-content container">
-                <img src="img/Baldwin-image-1.jpg" alt="">
+     <aside class="background100 padding-16 rounded-corners">
+            <div class="rounded-corners padding-16">
+                <h5>ON THIS PAGE</h5>
+                <div>
+                    <a class="no-style" style="color: white;" href="#toilet-repair">— Site Introduction</a>
+                    <br>
+                    <a class="no-style" style="color: white;" href="#toilet-repair-estimate-table">— Baldwin Timeline</a>
+                    <br>
+                    <a class="no-style" style="color: white;" href="#toilet-replacement">— Baldwin IV Store</a>
+                    <br>
+                </div>
             </div>
-            <!-- Regency Section -->
-            <div class="h--timeline-section">
-                <h3 class="h--timeline-subtitle">Regency of Raymond III</h3>
-                <p class="h--timeline-event-description">
-                    Due to Baldwin's young age, a regency was established with Raymond III of Tripoli as the regent. Raymond was a trusted and experienced leader who managed the kingdom's affairs until Baldwin came of age.
-                </p>
-            </div>
-            
-            <!-- Political Challenges Section -->
-            <div class="h--timeline-section">
-                <h3 class="h--timeline-subtitle">Political Challenges</h3>
-                <p class="h--timeline-event-description">
-                    Baldwin's ascension was marked by internal strife and external threats. The Kingdom of Jerusalem faced political instability, and Baldwin's leprosy was a cause of concern among his subjects and nobility. Despite these challenges, Baldwin took an active role in governance and military affairs.
-                </p>
-            </div>
-            
-            <!-- Baldwin's Early Reign Section -->
-            <div class="h--timeline-section">
-                <h3 class="h--timeline-subtitle">Baldwin's Early Reign</h3>
-                <p class="h--timeline-event-description">
-                    Baldwin quickly demonstrated his capability as a ruler. He worked closely with his regent and advisors, making key decisions that impacted the kingdom's stability and security. His reign began with efforts to strengthen the defenses of Jerusalem and maintain alliances with neighboring states.
-                </p>
-            </div>
-        </div>
-    </li>
+        </aside> 
+        <br>
+        </article>
+        </article>
 
+    </main>
 
-    <li class="h--timeline-event">
-        <div class="h--timeline-event-content container">
-            <h2 style="color: #fff;" class="h--timeline-event-title">Battle of Montgisard</h2>
-            <em class="h--timeline-event-date">1177</em>
-            <p>
-                In 1177, Baldwin IV led his forces to a significant victory against Saladin at the Battle of Montgisard. Despite his debilitating illness, he demonstrated remarkable leadership and bravery.
-            </p>
-            <div class="h--timeline-event-content container">
-                <img src="img/Montgisard.jpg" alt="">
-            </div>
-            <!-- Battle Details Section -->
-            <div class="h--timeline-section">
-                <h3 class="h--timeline-subtitle">Battle Details</h3>
-                <p class="h--timeline-event-description">
-                    The battle took place near Ramla. Baldwin, with only a small force, managed to surprise and rout Saladin's much larger army. The victory was a major morale booster for the Crusader states.
-                </p>
-            </div>
-            
-            <!-- Strategic Importance Section -->
-            <div class="h--timeline-section">
-                <h3 class="h--timeline-subtitle">Strategic Importance</h3>
-                <p class="h--timeline-event-description">
-                    The Battle of Montgisard was strategically significant as it halted Saladin's advance into the Kingdom of Jerusalem. Baldwin's decisive action and unexpected attack played a crucial role in the battle's outcome.
-                </p>
-            </div>
-            
-            <!-- Aftermath Section -->
-            <div class="h--timeline-section">
-                <h3 class="h--timeline-subtitle">Aftermath</h3>
-                <p class="h--timeline-event-description">
-                    The victory at Montgisard secured Baldwin's reputation as a formidable leader. It delayed Saladin's plans and strengthened the resolve of the Kingdom of Jerusalem. Baldwin's ability to lead despite his illness inspired his troops and subjects.
-                </p>
-            </div>
-        </div>
-    </li>
+    <script defer>
+        function moveCarousel(carouselId, direction) {
+            const carousel = document.getElementById(carouselId);
+            if (direction === 'prev') {
+                carousel.scrollBy({ left: -200, behavior: 'smooth' });
+            } else {
+                carousel.scrollBy({ left: 200, behavior: 'smooth' });
+            }
+        }
+    </script>
 
+    <my-footer></my-footer>
 
-    <li class="h--timeline-event">
-        <div class="h--timeline-event-content container">
-            <h2 style="color: #fff;" class="h--timeline-event-title">Defense of Kerak</h2>
-            <em class="h--timeline-event-date">1183</em>
-            <p>
-                In 1183, Baldwin IV successfully defended the castle of Kerak from Saladin's forces. His strategic acumen and determination were critical in withstanding the siege.
-            </p>
-            <div class="h--timeline-event-content container">
-                <img src="img/Karak-Castle.jpg" alt="">
-            </div>
-            <!-- Siege Details Section -->
-            <div class="h--timeline-section">
-                <h3 class="h--timeline-subtitle">Siege Details</h3>
-                <p class="h--timeline-event-description">
-                    The siege of Kerak occurred during the wedding of Humphrey IV of Toron and Isabella of Jerusalem. Despite the celebration, the defenders, led by Baldwin and Reynald of Châtillon, prepared for Saladin's attack. The castle's defenses were tested, but Baldwin's leadership ensured the morale and coordination of the defenders.
-                </p>
-            </div>
-            
-            <!-- Defense Strategies Section -->
-            <div class="h--timeline-section">
-                <h3 class="h--timeline-subtitle">Defense Strategies</h3>
-                <p class="h--timeline-event-description">
-                    Baldwin's strategy involved a combination of direct defense and sending messages for reinforcements. The arrival of the main Crusader army led by Baldwin himself forced Saladin to retreat. Baldwin's quick thinking and resourcefulness were pivotal in the defense of Kerak.
-                </p>
-            </div>
-            
-            <!-- Outcome Section -->
-            <div class="h--timeline-section">
-                <h3 class="h--timeline-subtitle">Outcome</h3>
-                <p class="h--timeline-event-description">
-                    The successful defense of Kerak was a significant achievement for Baldwin IV. It not only showcased his resilience and tactical prowess but also boosted the morale of the Crusader states. The event underscored Baldwin's capability as a military leader, even in the face of overwhelming odds.
-                </p>
-            </div>
-        </div>
-    </li>
+    <script>
+        var navigation = new Navigation(document.getElementById("navigation"), {
+            overlayColor: "#31A6FF"
+        });
+    </script>
+</body>
 
-
-    <li class="h--timeline-event">
-        <div class="h--timeline-event-content container">
-            <h2 style="color: #fff;" class="h--timeline-event-title">Death of Baldwin IV</h2>
-            <em class="h--timeline-event-date">1185</em>
-            <p>
-                Baldwin IV passed away in 1185 after a prolonged struggle with leprosy. His reign was marked by significant military and political challenges, yet he is remembered as a resilient and courageous leader.
-            </p>
-            <div class="h--timeline-event-content container">
-                <img src="img/Baldwin-iv-dead.png" alt="">
-            </div>
-            <!-- Final Years Section -->
-            <div class="h--timeline-section">
-                <h3 class="h--timeline-subtitle">Final Years</h3>
-                <p class="h--timeline-event-description">
-                    Baldwin's health continued to deteriorate in his final years. Despite his illness, he continued to lead and make critical decisions for the kingdom. He appointed his sister Sibylla's son, Baldwin V, as his co-king and regent to ensure a smooth succession and the stability of the Kingdom of Jerusalem.
-                </p>
-            </div>
-            
-            <!-- Succession Plan Section -->
-            <div class="h--timeline-section">
-                <h3 class="h--timeline-subtitle">Succession Plan</h3>
-                <p class="h--timeline-event-description">
-                    Baldwin IV's succession plan involved crowning his nephew, Baldwin V, as co-king to prevent any disputes upon his death. This move was intended to provide continuity and stability for the kingdom, though it faced challenges from various factions within the nobility.
-                </p>
-            </div>
-            
-            <!-- Legacy Section -->
-            <div class="h--timeline-section">
-                <h3 class="h--timeline-subtitle">Legacy</h3>
-                <p class="h--timeline-event-description">
-                    Baldwin IV's legacy is that of a determined and wise ruler who faced immense challenges with courage. His efforts to defend Jerusalem and maintain the stability of his kingdom are remembered as significant contributions to the history of the Crusader states. Despite his illness, he led his people with strength and resilience, earning respect and admiration that endures to this day.
-                </p>
-            </div>
-        </div>
-    </li>
-        </ol>
-        </div>
-    </section>
-    <script src="/my.js" defer></script>
-</body> 
 </html>
