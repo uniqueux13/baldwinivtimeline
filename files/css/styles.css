@@ -127,13 +127,7 @@
 
     header {
     top: 0;
-    padding-inline: .5rem;
-    }
-
-     {
-      flex-grow: 1;
-      place-self: center;
-      padding-inline: .5rem;
+    padding-inline: 1rem;
     }
 
     .greeting {
@@ -460,7 +454,7 @@
 
     @media screen and (min-width: 576px) {
       aside{
-        display: none;
+        display: block;
         position: sticky;
         height: fit-content;
         text-align: left; 
@@ -1145,6 +1139,10 @@ margin-top: .25rem;
   background-color: white;
   overflow: hidden;
 }
+.background000 {
+  border-color: white;
+  background-color: #1a1a1a;
+}
 
 .background100 {
   background-color: #2a2a2a;
@@ -1523,13 +1521,13 @@ textarea {
 }
 .carousel {
   display: flex;
-  gap: 16px;
+  gap: 8px;
   overflow-x: hidden;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
 }
 .carousel-item {
-  min-width: 300px;
+  min-width: 360px;
   scroll-snap-align: start;
   background: #1a1a1a;
   border-radius: 8px;
@@ -1585,7 +1583,7 @@ textarea {
 
 .profile-picture-gallery {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 10px; /* Adjust the gap between images as needed */
   padding: 16px; /* Add padding around the grid */
 }
@@ -1608,7 +1606,7 @@ textarea {
 }
 
 .disclosure {
-  font-size: 12px; /* Smaller font size for disclosure */
+  font-size: 12px;
   color: #777777;
   margin-top: 10px;
 }
@@ -1623,9 +1621,42 @@ textarea {
   color: transparent;
 }
 .sidebar {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
+  display: block;
+  grid-column: 1 / -1;
+  text-align: center;
+  background-color: none;
 }
+
+@media (min-width: 576px) {
+  .sidebar {
+      grid-column: 1 / -1;
+      text-align: center;
+  }
+}
+
+@media (min-width: 992px) {
+  .sidebar {
+      grid-column: 9 / 13;
+      text-align: left;
+  }
+}
+
+@media (min-width: 1280px) {
+  .sidebar {
+      grid-column: 9 / 13;
+      text-align: left;
+  }
+}
+
+@media (min-width: 1440px) {
+  .sidebar {
+      grid-column: 9 / 13;
+      text-align: left;
+  }
+}
+
 .main-content {
   padding: 2rem;
 }
@@ -1690,10 +1721,21 @@ textarea {
 }
 
 .KOH-movie {
-  width: 40%;
+  width: 50%;
   height: auto;
   display: block;
+  margin-left: 0; /* Align left by default */
+  margin-right: auto; /* Ensure it's not centered on larger screens */
 }
+
+@media (max-width: 576px) {
+  .KOH-movie {
+    width: 80%; /* Adjust the width as needed for smaller screens */
+    margin-left: auto; /* Center on mobile */
+    margin-right: auto; /* Center on mobile */
+  }
+}
+
 
 .product-info {
   padding: 0;
@@ -1753,3 +1795,4 @@ textarea {
   font-size: 1rem;
   line-height: 1.5;
 }
+
