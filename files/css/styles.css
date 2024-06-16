@@ -1,3 +1,16 @@
+/* Keyframes for the moving gradient */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 :root {
@@ -1144,7 +1157,18 @@ margin-top: .25rem;
 
 
 .background300 {
-  background-color: var(--secondary-500);
+  background: linear-gradient(270deg, #FFD700, #B8860B, #C0C0C0, #2B2B2B);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+}
+
+/* Background 400 */
+.background400 {
+  background: linear-gradient(135deg, #FFD700, #B8860B, #C0C0C0, #2B2B2B);
+  background-size: cover;
+  border-radius: 8px;
+  padding: 2rem;
+  color: #fff;
 }
 
 
@@ -1559,3 +1583,173 @@ textarea {
   margin-bottom: 8px; /* Reduced margin for paragraph */
 }
 
+.profile-picture-gallery {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 10px; /* Adjust the gap between images as needed */
+  padding: 16px; /* Add padding around the grid */
+}
+
+.profile-picture-gallery img {
+  width: 100%; /* Make the images responsive within their grid cells */
+  height: auto; /* Maintain aspect ratio */
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: border 0.3s;
+}
+
+.profile-picture-gallery img:hover {
+  border: 2px solid gold; /* Change border color to gold for selected images */
+}
+
+.affiliate-link {
+  margin: 20px 0;
+  font-size: 18px;
+}
+
+.disclosure {
+  font-size: 12px; /* Smaller font size for disclosure */
+  color: #777777;
+  margin-top: 10px;
+}
+
+.product-image {
+  width: 200px; /* Adjust the width as needed */
+  margin: 10px 0;
+}
+.gradient-text {
+  background: linear-gradient(to right, gold, goldenrod);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.sidebar {
+  margin: 0px;
+  padding: 0px;
+}
+.main-content {
+  padding: 2rem;
+}
+
+.hero-section {
+  background-color: #111;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.hero-section h1 {
+  color: #31A6FF;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-section p {
+  color: #e0e0e0;
+  font-size: 1.25rem;
+}
+
+.featured-products,
+.product-categories {
+  background-color: #222;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.featured-products h2,
+.product-categories h2 {
+  color: #31A6FF;
+  font-size: 2rem;
+  margin-bottom: rem;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.product-card {
+  background-color: #333;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.KOH-movie {
+  width: 40%;
+  height: auto;
+  display: block;
+}
+
+.product-info {
+  padding: 0;
+  text-align: center;
+}
+
+.product-info h3 {
+  color: gold;
+  margin: 0;
+  font-size: 1rem;
+}
+
+.product-info p {
+  color: #e0e0e0;
+  margin: 0rem 0 0;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.tab-button {
+  background-color: #31A6FF;
+  color: #fff;
+  border: none;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.tab-button:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.tab-button.active,
+.tab-button:hover {
+  background-color: #1e90ff;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+.hero-container-left .subtitle {
+  color: #e0e0e0;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-container-left .product-description p {
+  color: #c0c0c0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
