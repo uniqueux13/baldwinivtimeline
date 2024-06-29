@@ -1,0 +1,394 @@
+  .column {
+    aspect-ratio: 1 / 1;
+    grid-column: 1 / 5;
+    border-radius: 4px;
+    background-color: var(--secondary-100);
+    padding: 1rem;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3), 0px 2px 6px 2px rgba(0, 0, 0, 0.15);
+  }
+  .column > p, .column2 > p, .column3 > p {
+    margin-top: 8px;
+  }
+
+  .column2 {
+    grid-column: 1 / 5;
+    border-radius: 4px;
+    background-color: var(--secondary-100);
+    padding: 1rem;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3), 0px 2px 6px 2px rgba(0, 0, 0, 0.15);
+  }
+
+  .column3 {
+    grid-column: 1 / 5;
+    border-radius: 4px;
+    background-color: var(--secondary-100);
+    padding: 1rem;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3), 0px 2px 6px 2px rgba(0, 0, 0, 0.15);
+  }
+
+  @media (min-width: 905px) {
+    .column2 {
+      grid-column: 5 / 9;
+      padding: 1rem;
+    }
+  }
+
+  
+  @media (min-width: 905px) {
+    .column3 {
+      grid-column: 9 / 13;
+      padding: 1rem;
+    }
+  }
+
+   /*//////// Container Center ////////*/
+  
+   .container-center, .container-center > h1, .container-center > h2 {
+    grid-column: 1 / 13;
+    text-align: center;
+    color: var(--secondary-500);
+    background-color: white;
+  }
+
+  @media (min-width: 905px) {
+    .container-center {
+      grid-column: 1 / 8;
+      padding: 0;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    .container-center {
+      grid-column: 1 / 13;
+      padding: 0;
+    }
+  }
+
+ /*//////// Hero Content ////////*/
+  .hero-content {
+    align-self: center;
+  }
+
+ /*//////// Hero Image ////////*/
+
+  .hero-img {
+    grid-column: 1 / 5;
+    align-self: center;
+    aspect-ratio: 1 / 1;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    background-image: url(/imgs/Hero.png); 
+    background-size: cover;
+    background-position: center;   
+  }
+
+    @media (min-width: 905px) {
+      .hero-img {
+       grid-column: 7 / 13;
+       margin: 12px;
+      }
+    }
+
+    @media (min-width: 1280px) {
+      .hero-img {
+       grid-column: 7 / 13;
+      }
+    } 
+
+    @media (min-width: 1440px) {
+      .hero-img {
+       grid-column: 7 / 13;
+       height: 100%;
+       background-color: var(--secondary-500);
+      }
+    } 
+
+    /*//////// Image Left////////*/
+
+  .img-left {
+    grid-column: 1 / 5;
+    height: 100%;
+    width: auto;
+    align-items: center;
+    height: 288px;
+    width: 100%;
+    margin: 40px 8px;
+    background-color: white;
+    background-image: url(/imgs/Map-of-Vandalia-Ohio.png);
+    background-size: cover;
+    background-position: top;   
+  }
+
+    @media (min-width: 905px) {
+      .img-left {
+       grid-column: 8 / 13;
+       width: auto;
+       align-self: center;
+       height: 100%;
+       width: 100%;
+       margin: 0;
+       background-color: white;
+      }
+    }
+
+    @media (min-width: 1440px) {
+      .img-left {
+       grid-column: 1 / 7;
+       height: 500px;
+       width: 100%;
+       background-size: cover;
+       background-position: center;
+      }
+    } 
+
+        /*//////// Image right////////*/
+
+  .img-right {
+    grid-column: 17 / 5;
+    height: 100%;
+    width: auto;
+    align-items: center;
+    height: 288px;
+    width: auto;
+    margin: 40px 8px;
+    background-color: white;
+    background-image: url(/imgs/Map-of-Vandalia-Ohio.png);
+    background-size: cover;
+    background-position: top;   
+  }
+
+    @media (min-width: 905px) {
+      .img-right {
+       grid-column: 8 / 13;
+       width: auto;
+       align-self: center;
+       height: 100%;
+       width: auto;
+       margin: 0;
+       background-color: white;
+      }
+    }
+
+    @media (min-width: 1440px) {
+      .img-right {
+       grid-column: 7 / 13;
+       margin: 24px;
+       height: 400px;
+       width: 500px;
+       background-size: cover;
+       background-position: center;
+      }
+    } 
+
+           /*//////// Image center////////*/
+
+  .img-center {
+    grid-column: 1 / 4;
+    aspect-ratio: 1.91 / 1;
+    background-image: url(/imgs/Outside\ Faucet.png);
+    background-size: cover;
+    background-position: center;   
+  }
+
+    /*//////// content Right ///////*/
+
+    .content-right {
+      display: grid;
+      grid-column: 1/5;
+      margin: 24px 8px;
+      height: fit-content;
+    }
+  
+  
+      @media (min-width: 905px) {
+        .content-right {
+          grid-column: 7 / 13;
+        }
+      }
+
+  
+      @media (min-width: 1440px) {
+        .content-right {
+          grid-column: 7 / 13;
+        }
+      } 
+
+      /*//////// content left ///////*/
+
+    .content-left {
+      display: grid;
+      grid-column: 1/5;
+      max-width: 70ch;
+      margin: 24px 8px;
+      height: fit-content;
+    }
+  
+  
+      @media (min-width: 905px) {
+        .content-left {
+          grid-column: 1 / 7;
+        }
+      }
+
+  
+      @media (min-width: 1440px) {
+        .content-left {
+          grid-column: 1 / 7;
+          margin: 48px 0;
+        }
+      } 
+
+/*//////// Button Container ///////*/
+    .button-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin: 0;
+      padding-bottom: 0;
+    }
+
+      .blue {
+        color: var(--Primary-400);
+        font-weight: 500;
+        text-decoration: none;
+        padding-bottom: 8px;
+      }
+  
+  /*//////// Primary Button ///////*/
+
+  .primary-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    gap: 1rem;
+    position: relative;
+    padding: 1rem;
+    white-space: nowrap;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+    border: none;
+    background-color: var(--Primary-400);
+  }
+
+  @media (min-width: 905px) {
+    .primary-btn{
+    padding: .8rem;
+    width: fit-content;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .primary-btn{
+    padding: 1rem;
+    width: fit-content;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    .primary-btn{
+    padding: 1rem;
+    width: 232px;
+    }
+  }
+
+   /*//////// Secondary Button ///////*/
+
+  .secondary-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: .8rem;
+    gap: 16px;
+    white-space: nowrap;
+    color: var(--secondary-400);
+    cursor: pointer;
+    border-radius: 4px;
+    border: none;
+    background-color: transparent;
+    outline: 1px solid var(--secondary-300);
+    }
+  
+    @media (min-width: 905px) {
+      .secondary-btn{
+        padding: .8rem;
+        width: 208px;
+      }
+    }
+
+    @media (min-width: 1280px) {
+      .secondary-btn{
+        padding: 1rem;
+        width: 220px;
+      }
+    }
+
+      @media (min-width: 1440px) {
+        .secondary-btn{
+          padding: 1rem;
+          width: fit-content;
+        }
+      }
+
+      .text-and-icon-btn {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        width: 100%;
+        padding: .5rem;
+        margin: 0;
+        gap: 12px;
+        white-space: nowrap;
+        border: none;
+        color: var(--secondary-400);
+        cursor: pointer;
+        background-color: transparent;
+        
+        }
+      
+        @media (min-width: 905px) {
+          .text-and-icon-btn{
+          }
+        }
+    
+        @media (min-width: 1280px) {
+          .text-and-icon-btn{
+          }
+        }
+    
+          @media (min-width: 1440px) {
+            .text-and-icon-btn{
+            }
+          }
+
+      .primary-btn:hover, .primary-btn:focus {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: var(--Primary-400);
+  background: linear-gradient(0deg, rgba(47, 123, 189, 1), rgba(61, 155, 233, 1)), #FFFBFE;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3), 0px 2px 6px 2px rgba(0, 0, 0, 0.15);
+}
+
+.secondary-btn:hover,
+.secondary-btn:focus {
+  color: var(--Primary-400);
+  text-decoration: none;
+  background-color: white;
+  outline: 1px solid var(--Primary-400);
+}
+    .two-column-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-content: flex-start;
+        flex-wrap: wrap;
+        margin: 12px 12px;
+        gap: 24px;
+    }
+

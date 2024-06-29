@@ -1,0 +1,33 @@
+.accordion {
+    position: relative;
+    float: left;
+    background-color: none;
+    color: var(--primary-400);
+    cursor: pointer;
+    padding: 18px;
+    margin-block: 2px;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    transition: 0.4s;
+  }
+  
+  .down-arrow {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: right;
+  }
+
+  .active, .accordion:hover {
+    background-color: none;
+    color: var(--primary-400); 
+  }
+  
+  .panel {
+    padding: 4px 8px;
+    display: none;
+    background-color: none;
+    overflow: hidden;
+  }
