@@ -315,9 +315,24 @@
         <br>
         </article>
         </article>
-
     </main>
 
+    <section class="container">
+        <div class="explanation">
+          <h2 class="label-large margin-bottom-8">Subscribe to Our Newsletter</h2>
+          <p>Stay updated with our latest news and offers. Enter your email below to subscribe to our newsletter.</p>
+        </div>
+        <form class="form" name="subscribe" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you">
+          <p style="display:none;">
+            <label>Don’t fill this out if you’re human: <input name="bot-field"></label>
+          </p>
+          <input type="email" name="email" id="email" placeholder="Enter your email" required>
+          <button class="primary-btn button-text margin-top-8" type="submit">Subscribe</button>
+        </form>
+        <br>
+      </section>
+
+    
     <script defer>
         function moveCarousel(carouselId, direction) {
             const carousel = document.getElementById(carouselId);
